@@ -1,13 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;600&family=Playfair+Display:wght@400;500;600;700;800&family=Roboto:wght@100;300;400;500;900&display=swap');
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: #f6fff6;
+  padding: 0;
+  margin: 0;
+  font-family: 'Playfair Display', serif;
+  --serif: 'Playfair Display', serif;
+  --sans-serif: 'Open Sans', sans-serif;
+  --sans-serif-2: 'Roboto', sans-serif;
+  --dark: #333333;
+  --bg-home: #f4f7ff;
+  --bg-about: #FCFFFC;
+  --bg-projects: #f6fff6;
 }
+
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+::-webkit-scrollbar {
+  width: 0.5em;
+  margin-block: 10em;
+
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(0, 0%, 0%);;
+  border-radius: 100vw;
+}
+
+
