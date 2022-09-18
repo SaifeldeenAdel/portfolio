@@ -1,7 +1,7 @@
 import { AnimatePresence } from "framer-motion";
 import React from "react";
 import { Routes, Route, useLocation, Outlet } from "react-router-dom";
-import { Home, About, Projects, Challenges, NavBar, PageLayout } from "./imports";
+import { Home, About, Contact, Projects, NavBar, PageLayout } from "./imports";
 
 
 const NavLayout = () => {
@@ -27,7 +27,7 @@ const DefaultRoutes = () => {
         <Route path="/" element={<NavLayout />}> 
           <Route path="about" element={<About />} />
           <Route path="projects" element={<Projects />} />
-          <Route path="challenges" element={<Challenges />} />
+          <Route path="contact" element={<Contact />} />
 
         </Route>
       </Routes>

@@ -21,7 +21,6 @@ const NavBar = () => {
       <NavLinks>
         <StyledNavLink to="about">About Me</StyledNavLink>
         <StyledNavLink to="projects">Projects</StyledNavLink>
-        <StyledNavLink to="challenges">Coding Challenges</StyledNavLink>
         <StyledNavLink to="contact">Get in touch</StyledNavLink>
       </NavLinks>
     </Nav>

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Content, Heading } from '../../styles/GlobalStyles'
 
 
@@ -16,17 +16,21 @@ const containerVariants = {
   }
 }
 
-const Challenges = () => {
+const Contact = () => {
+  useEffect(() => {
+    document.title= "Get in Touch"
+  }, [])
+  
   return (
     <Content variants={containerVariants} initial='hidden' animate='visible' exit='exit'>
       <Heading>
-        Coding Challenges
+        Get in Touch
       </Heading>
     
     
     </Content>
-    
   )
 }
 
-export default Challenges
+export default Contact
+
