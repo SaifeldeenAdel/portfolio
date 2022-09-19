@@ -49,7 +49,7 @@ const Paragraph = styled(motion.p) `
   margin: 0.5em 0;
 
   @media ${device.mobile} {
-    font-size: 0.9em;
+    font-size: 1.0em;
 
     
   }
