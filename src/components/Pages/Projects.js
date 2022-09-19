@@ -54,8 +54,8 @@ const Projects = () => {
       x:0,
       opacity: 1,
       transition: {
-        type: 'spring',
-        stiffness: 30,
+        type: "tween",
+        stiffness: 10,
       }
     }
 
@@ -67,7 +67,7 @@ const Projects = () => {
         Projects
       </Heading>
       <ProjectsContainer variants={projectContainerVariants} >
-        <Project variants={project}>
+        <Project initial="hidden" whileInView="visible" viewport={{ once: true }} variants={project}>
           <ProjectContent>
             
             <ProjectImage src={FoodieImage} alt="foodie" bright/>
@@ -91,7 +91,7 @@ const Projects = () => {
             </ProjectInfo>
           </ProjectContent>
         </Project>
-        <Project variants={project}>
+        <Project initial="hidden" whileInView="visible" viewport={{ once: true }} variants={project}>
           <ProjectContent>
             <ProjectImage src={FinanceeImage} alt="financee" />
             <ProjectInfo>
@@ -115,7 +115,7 @@ const Projects = () => {
           </ProjectContent>
         </Project>
 
-        <Project variants={project}>
+        <Project initial="hidden" whileInView="visible" viewport={{ once: true }} variants={project}>
           <ProjectContent>
             <ProjectImage src={PortfolioImage} alt="portfolio" />
             <ProjectInfo>
@@ -134,7 +134,7 @@ const Projects = () => {
           </ProjectContent>
         </Project>
         
-        <Project variants={project}>
+        <Project initial="hidden" whileInView="visible" viewport={{ once: true }} variants={project}>
           <ProjectContent>
             <ProjectImage src={PortfolioImage} alt="financee" blur />
             <ProjectInfo>
