@@ -2,6 +2,7 @@ import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 import { motion } from "framer-motion";
 import { device } from "./GlobalStyles";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Nav = styled(motion.nav)`
   box-sizing: border-box;
@@ -24,6 +25,32 @@ const Nav = styled(motion.nav)`
 	align-items: center;
 `;
 
+const NavToggle = styled(motion.button)`
+  display: none;
+  
+  @media ${device.mobile} {
+    display: block;
+    z-index: 9999;
+    position: absolute;
+    background: none;
+    border: none;
+    width: 2em;
+    aspect-ratio: 1;
+    top: 5.3rem;
+    right: 2.5rem;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+
+
+`
+
+const Icon = styled(FontAwesomeIcon) `
+  height: 1.7em;
+`
+
 const Logo = styled(NavLink)`
 	font-weight: 800;
 	font-size: 1.6rem;
@@ -33,10 +60,10 @@ const Logo = styled(NavLink)`
 `;
 
 const NavLinks = styled.div`
+  display: flex;
 	.active {
-		color: var(--dark);
-
-		&::after {
+    &::after {
+      color: var(--dark);
 			width: 100%;
 			height: 3%;
 			background-color: black;
@@ -47,8 +74,24 @@ const NavLinks = styled.div`
 		}
 	}
 
-  @media ${device.tablet}{
-    display: none;
+  @media ${device.mobile}{
+    z-index: 1000;
+    position: fixed;
+    inset: 0 0 0 30%;
+    background: hsl(120, 18%, 79%, 0.9);
+    backdrop-filter: blur(0.4rem);
+    flex-direction: column;
+    padding: min(30vh, 10rem) 2rem;
+    transform: translateX(100%);
+    transform: ${props => props.visible ? 'translateX(0%);' : 'translateX(100%);'};
+    /* transition: transform 200ms ease-in; */
+
+    .active{
+      font-weight: 600;
+      &::after {
+        content: none;
+      }
+    }
   }
 `;
 
@@ -79,6 +122,13 @@ const StyledNavLink = styled(NavLink)`
       
 		}
 	}
+  @media ${device.mobile} {
+    margin: 0.6em 0 ;
+
+    &::after {
+      content: none;
+    }
+  }
 `;
 
-export { Nav, Logo, NavLinks, StyledNavLink };
+export { Nav, Logo, NavLinks, StyledNavLink, NavToggle, Icon };

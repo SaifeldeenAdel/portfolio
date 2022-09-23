@@ -35,11 +35,15 @@ const Projects = () => {
 
   const projectContainerVariants = {
     hidden: {
+      x:-50,
+      opacity: 0,
     },
     visible: {
+      x:0,
+      opacity: 1,
       transition: {
         when: 'beforeChildren',
-        staggerChildren: 0.5
+        type: "tween",
       }
     }
 
