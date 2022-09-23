@@ -84,7 +84,7 @@ const NavLinks = styled.div`
     padding: min(30vh, 10rem) 2rem;
     transform: translateX(100%);
     transform: ${props => props.visible ? 'translateX(0%);' : 'translateX(100%);'};
-    /* transition: transform 200ms ease-in; */
+    transition: transform 200ms ease-in;
 
     .active{
       font-weight: 600;

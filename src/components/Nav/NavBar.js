@@ -14,16 +14,9 @@ const NavBar = () => {
     },
     exit: {
       opacity: 0,
-      transition: {ease: "easeInOut", duration: 0.5}
+      transition: {ease: "easeInOut", duration: 0.2}
     }
   }
-
-  useEffect(() => {
-    console.log(toggle);
-
-  
-  }, [toggle])
-  
 
   return (
     <>
