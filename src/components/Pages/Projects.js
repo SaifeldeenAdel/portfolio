@@ -8,6 +8,7 @@ import { faPlay } from '@fortawesome/free-solid-svg-icons'
 import FoodieImage from '../../thumbnails/foodie.png'
 import FinanceeImage from '../../thumbnails/financee.png'
 import PortfolioImage from '../../thumbnails/portfolio.png'
+import Empty from '../../thumbnails/white.png'
 
 
 
@@ -34,15 +35,12 @@ const Projects = () => {
   }
 
   const projectContainerVariants = {
-    hidden: {
-      x:-50,
-      opacity: 0,
-    },
     visible: {
       x:0,
       opacity: 1,
       transition: {
-        when: 'beforeChildren',
+        delayChildren: 0.2,
+        staggerChildren: 0.7,
         type: "tween",
       }
     }
@@ -58,8 +56,9 @@ const Projects = () => {
       x:0,
       opacity: 1,
       transition: {
-        type: "tween",
-        stiffness: 10,
+        type: "spring",
+        duration: 0.6,
+        damping: 20,
       }
     }
 
@@ -71,7 +70,7 @@ const Projects = () => {
         Projects
       </Heading>
       <ProjectsContainer variants={projectContainerVariants} >
-        <Project initial="hidden" whileInView="visible" viewport={{ once: true }} variants={project}>
+        <Project variants={project}>
           <ProjectContent>
             
             <ProjectImage src={FoodieImage} alt="foodie" bright/>
@@ -95,7 +94,7 @@ const Projects = () => {
             </ProjectInfo>
           </ProjectContent>
         </Project>
-        <Project initial="hidden" whileInView="visible" viewport={{ once: true }} variants={project}>
+        <Project variants={project} >
           <ProjectContent>
             <ProjectImage src={FinanceeImage} alt="financee" />
             <ProjectInfo>
@@ -119,7 +118,7 @@ const Projects = () => {
           </ProjectContent>
         </Project>
 
-        <Project initial="hidden" whileInView="visible" viewport={{ once: true }} variants={project}>
+        <Project variants={project}>
           <ProjectContent>
             <ProjectImage src={PortfolioImage} alt="portfolio" />
             <ProjectInfo>
@@ -128,7 +127,7 @@ const Projects = () => {
               <LinkContainer>
                 <div>
                   <Icon icon={faGithub} />
-                  <ProjectLink target="_blank" href='https://github.com/SaifeldeenAdel/Financee-CS50w-Final-Project'> Project Repository</ProjectLink>
+                  <ProjectLink target="_blank" href='https://github.com/SaifeldeenAdel/portfolio'> Project Repository</ProjectLink>
                   
                 </div>
                 
@@ -138,14 +137,11 @@ const Projects = () => {
           </ProjectContent>
         </Project>
         
-        <Project initial="hidden" whileInView="visible" viewport={{ once: true }} variants={project}>
+        <Project variants={project}>
           <ProjectContent>
-            <ProjectImage src={PortfolioImage} alt="financee" blur />
+            <ProjectImage src={Empty} alt="financee" blur />
             <ProjectInfo>
               <ProjectTitle>Coming Soon....</ProjectTitle>
-              <Description></Description>
-              <LinkContainer>
-              </LinkContainer>
 
             </ProjectInfo>
           </ProjectContent>

@@ -4,8 +4,9 @@ import Projects from "../components/Pages/Projects";
 import NavBar from "../components/Nav/NavBar";
 import MainContainer from "../containers/MainContainer";
 import PageLayout from "../containers/PageLayout";
-import Contact from "../components/Pages/Contact";
+import ContactMe from "../components/Pages/ContactMe";
 
 
 
-export {About, Home, Contact, Projects, NavBar, MainContainer, PageLayout}
+
+export {About, Home, ContactMe, Projects, NavBar, MainContainer, PageLayout}

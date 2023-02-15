@@ -33,7 +33,6 @@ const Heading = styled.h1 `
   
 `
 
-
 const Content = styled(motion.div) `
   display:flex;
   flex-direction:column;

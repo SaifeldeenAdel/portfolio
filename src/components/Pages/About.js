@@ -61,7 +61,7 @@ const About = () => {
       </Heading>
       <Container>
           <Paragraph>
-            The name is Saif eldeen Adel and I’m a college student who's teaching himself how to code. From being introduced to programming in high school to it being the only thing I want to do, I'd say I've come a long way. Got into web development pretty early in my journey so I've gathered up some pretty good experience since then. Creating backends primarily with Django and currently in the process of learning NodeJS-Express to broaden my backend knowledge for the market out there. As for frontend frameworks, I use React exclusively for the time being as it helps me design modern/sleek UI/UX for my apps but I am no where near mastering it given how vast it can get. 
+            My name is Saif eldeen Adel and I’m a college student who's teaching himself how to code. From being introduced to programming in high school to it being a huge part of my life right now, I'd say I've come a long way. Web development was one of the first things I got into at the beginning of my journey. Created backends primarily with Django and currently in the process of learning NodeJS-Express to broaden my backend knowledge for the market out there. As for frontend frameworks, I use React exclusively for the time being because of the abundance of resources for it and it helps me design modern and sleek UI/UX for my apps and I'm still no where near mastering it given how vast it can get. 
           </Paragraph>
           {/* <Image src="https://i.ibb.co/GQr5cDJ/headshot.jpg" alt="headshot" /> */}
           {/* <Frameworks variants={frameworkVariants}>
@@ -71,11 +71,11 @@ const About = () => {
 
           </Frameworks> */}
           <Paragraph>
-            Besides web development and design, I am also interested in machine learning and artificial intelligence in general so I'm currently taking a deep dive into things like data science, reinforcement learning with neural networks, etc and hoping to work on projects centered around them soon. And given how common AI is becoming in various technologies nowadays, I also wish to incorporate some AI aspects (dealing with data science) in my web projects in the near future. 
+            Besides web development and design, I am also interested in machine learning and AI in general so I'm currently taking a deep dive into things like AI in data science, deep learning with neural networks, etc and hoping to work on projects centered around them soon. And given how common AI is becoming in various technologies nowadays, I also wish to incorporate some of it in my web projects in the near future (think of recommendation systems, SEO, etc). 
             
           </Paragraph>
           <Paragraph>
-            To follow me along this journey and to find out more about what I can do, check out the Projects section up there and have a look at the Coding Challenges section as well, maybe you'd like to have a go at some of these, haha! And if you wish to contact me, dont hesitate! 
+            To follow me along this journey and to find out more about what I can do, check out the Projects section up there and if you wish to contact me, you'll find all my socials in the Contact sections, dont hesitate so say hey!
           </Paragraph>
 
           <Frameworks variants={listVariants}>

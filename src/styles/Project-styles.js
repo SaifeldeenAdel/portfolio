@@ -46,7 +46,7 @@ const ProjectImage = styled.img`
 	border: 1px solid black;
 	margin-right: 50px;
   filter: ${props => props.bright ? 'brightness(110%)' : ''};
-  filter: ${props => props.blur ? 'blur(3px)' : ''};
+  filter: ${props => props.blur ? 'blur(2px)' : ''};
 
 
 	@media ${device.tablet} {
